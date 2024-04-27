@@ -282,8 +282,8 @@ void ShowMenu()
 	cout << "***********************************" << endl;
 	cout << "***********************************" << endl;
 	cout << "***********************************" << endl;
-	cout << "*********   1¡¢¿ªÊ¼ÓÎÏ·   *********" << endl;
-	cout << "*********   0¡¢ÍË³öÓÎÏ·   *********" << endl;
+	cout << "*********   1ã€å¼€å§‹æ¸¸æˆ   *********" << endl;
+	cout << "*********   0ã€é€€å‡ºæ¸¸æˆ   *********" << endl;
 	cout << "***********************************" << endl;
 	cout << "***********************************" << endl;
 	cout << "***********************************" << endl;
@@ -631,18 +631,18 @@ void Game()
 	{
 		Craft MyCraft[4];
 		Craft NextCraft[4];
-		//Éú³É·½¿é
+		//ç”Ÿæˆæ–¹å—
 		int r = ProduceCraft(MyCraft);
-		//·½¿éÒÆ¶¯
+		//æ–¹å—ç§»åŠ¨
 		for (int i = 0; i < 4; i++)
 		{
 			NextCraft[i].x = MyCraft[i].x;
 			NextCraft[i].y = MyCraft[i].y;
 		}
 		MoveCraft(MyCraft, NextCraft, r);
-		//ÏûÃðÅÐ¶Ï
+		//æ¶ˆç­åˆ¤æ–­
 		IsRemove();
-		//½áÊøÅÐ¶Ï
+		//ç»“æŸåˆ¤æ–­
 		if (IsEnd(MyCraft, NextCraft))
 		{
 			system("cls");
@@ -664,7 +664,7 @@ int main()
 		GameFrame();
 		if (GameSignal == 0)
 		{
-			cout << "ÄúÒÑÍË³öÓÎÏ·£¡" << endl;
+			cout << "æ‚¨å·²é€€å‡ºæ¸¸æˆï¼" << endl;
 			break;
 		}
 		if (GameSignal == 1)
@@ -676,7 +676,7 @@ int main()
 		else
 		{
 			system("cls");
-			cout << "ÇëÖØÐÂÊäÈë£¡";
+			cout << "è¯·é‡æ–°è¾“å…¥ï¼";
 			Sleep(2000);
 			system("cls");
 			continue;
